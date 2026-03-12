@@ -1,11 +1,11 @@
 package com.example.appmap.service;
 
 import com.example.appmap.modelo.Ruta;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
+import java.util.ArrayList;
+
 
 @Service
 public class serviceRuta {
