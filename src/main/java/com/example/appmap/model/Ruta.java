@@ -13,6 +13,7 @@ public class Ruta {
     private String id;
     private String origen;
     private String destino;
-    private LocalDateTime tiempoEstimado;
+    private String tipoTransporte; 
+    private int tiempoEstimado;
     private Double costo;
 }
