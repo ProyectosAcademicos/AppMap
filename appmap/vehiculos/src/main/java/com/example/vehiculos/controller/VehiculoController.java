@@ -23,8 +23,11 @@ public class VehiculoController {
         return serviceVehiculo.crearVehiculo(vehiculo);
     }
 
-    @PutMapping("/{marca}/{modelo}/estado")
-    public Vehiculo cambiarEstadoVehiculo(@PathVariable String marca, @PathVariable String modelo, @RequestParam String nuevoEstado) {
-        return serviceVehiculo.cambiarEstadoVehiculo(marca, modelo, nuevoEstado);
+    @PutMapping("/estado")
+    public Vehiculo cambiarEstadoVehiculo(@RequestBody Vehiculo vehiculo) {
+        return serviceVehiculo.cambiarEstadoVehiculo(
+            vehiculo.getId(),
+            vehiculo.getEstado()
+        );
     }
 }

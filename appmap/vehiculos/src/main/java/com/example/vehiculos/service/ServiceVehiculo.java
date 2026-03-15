@@ -23,9 +23,9 @@ public class ServiceVehiculo {
     }
 
     //cambiar estado del vehículo
-    public Vehiculo cambiarEstadoVehiculo(String marca, String modelo, String nuevoEstado) {
+    public Vehiculo cambiarEstadoVehiculo(String id, String nuevoEstado) {
         for (Vehiculo vehiculo : vehiculos) {
-            if (vehiculo.getMarca().equals(marca) && vehiculo.getModelo().equals(modelo)) {
+            if (vehiculo.getId().equals(id)) {
                 vehiculo.setEstado(nuevoEstado);
                 return vehiculo;
             }
